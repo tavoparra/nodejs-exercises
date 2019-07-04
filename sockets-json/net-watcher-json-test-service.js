@@ -12,7 +12,7 @@ const
     // after a one second delay, send the other chunk
     let timer = setTimeout(function(){
         connection.write('et.txt","timestamp":1358175758495 }' + '\n');
-	connection.end();
+	      connection.end();
     }, 1000);
 
     // clear timer when the connection ends
