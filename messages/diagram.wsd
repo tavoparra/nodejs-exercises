@@ -1,0 +1,12 @@
+@startuml File Responder Cluster Push/Pull
+
+actor User
+control Router
+collections Clusters
+
+User -> Router: Request file
+Router -> Clusters: Request file
+Clusters -> Router: Serve file
+Router -> User: Serve file content
+
+@enduml
